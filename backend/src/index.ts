@@ -1,6 +1,19 @@
 import express, { Request, Response } from "express";
 import Cors from "cors";
 import "dotenv/config";
+import mongoose from "mongoose";
+
+/**
+ * make the connection the the database intially so that if the connection the database fails then our app crashes
+ */
+mongoose
+  .connect(process.env.MONGODB_CONNECTION_STRING as string)
+  .then(() => {
+    console.log("connected to the database successfully");
+  })
+  .catch((err) => {
+    console.log("error connecting the database", err);
+  });
 
 /**
  * creating a new express server and assigning it to app variable
