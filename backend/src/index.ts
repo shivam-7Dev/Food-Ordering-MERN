@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 import Cors from "cors";
 import "dotenv/config";
 import mongoose from "mongoose";
+import myUserRoute from "./routes/myUserRoute";
 
 /**
  * make the connection the the database intially so that if the connection the database fails then our app crashes
@@ -44,6 +45,13 @@ app.get("/test", async (req: Request, res: Response) => {
   res.json({ message: "hello world" });
 });
 
+app.use("/api/my/user", myUserRoute);
+
 app.listen(7000, () => {
   console.log("server listning on port 7000");
 });
+
+/**
+ * Flow of the request
+ *  connect the controller to the route, and route to index file
+ */
