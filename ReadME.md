@@ -1,22 +1,5 @@
 # THis project has following things
 
-> backend setup
-> frontend setup
-> database setup
-> react router setup
-> layout and header
-> mobile nav
-> desktop nav
-> responsive landing page
-> auth0 overview
-> auth0 setup
-> Authenticated user links
-> Create User profile overview
-> User Model
-> Create user API
-> Create user request
-> Auth0 Access Token
-> Validate Access Token
 > Update user profile api
 > User profile form
 > Update user profile request
