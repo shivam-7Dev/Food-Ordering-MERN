@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import Cors from "cors";
+import cors from "cors";
 import "dotenv/config";
 import mongoose from "mongoose";
 import myUserRoute from "./routes/myUserRoute";
@@ -32,7 +32,7 @@ app.use(express.json());
 /**
  * setting up the cors middle ware
  */
-app.use(Cors());
+app.use(cors());
 
 /**
  * setting up the test endpoint
