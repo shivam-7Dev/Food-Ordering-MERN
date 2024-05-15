@@ -34,6 +34,41 @@ const createCurrentUser = async (req: Request, res: Response) => {
   }
 };
 
+const updateCurrentUser = async (req: Request, res: Response) => {
+  try {
+    const userId = req.userId;
+    const { name, addressLine1, country, city } = req.body;
+    /**
+     * once we have the data next step is get the user from the database and update it
+     * If no user is found the send error message
+     */
+    const user = await User.findById({ userId });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    //update the User object
+    user.name = name;
+    user.addressLine1 = addressLine1;
+    user.country = country;
+    user.city = city;
+
+    //once you have updated the user then save it
+
+    await user.save();
+
+    //send back the updated user
+    res.send(user);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({
+      message: "Error updating the user",
+    });
+  }
+};
+
 export default {
   createCurrentUser,
+  updateCurrentUser,
 };
