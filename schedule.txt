@@ -1,4 +1,4 @@
-Daily Schedule for Completing the remaining project Project
+Daily Schedule for Completing Project
 
 Day 1
 ------
@@ -8,29 +8,23 @@ Tasks:
 - Pre-populate user profile form (04:43:49)
 - Protect user profile router (04:52:09)
 - First deployment - overview (04:57:15)
+- Backend GitHub repo (05:07:51)
 
 Total Time: 1 hour 10 minutes
 
 Day 2
 ------
 Tasks:
-- Backend GitHub repo (05:07:51)
 - Backend deploy to Render (05:15:31)
 - Frontend GitHub/deployment (05:24:06)
-
-Total Time: 1 hour 9 minutes
-
-Day 3
-------
-Tasks:
 - Manage restaurant overview (05:33:14)
 - Cloudinary setup (05:35:40)
 - Create restaurant API (05:44:12)
 - Create restaurant form (06:17:01)
 
-Total Time: 2 hours 25 minutes
+Total Time: 2 hours 50 minutes
 
-Day 4
+Day 3
 ------
 Tasks:
 - Create restaurant API request (07:22:10)
@@ -38,39 +32,67 @@ Tasks:
 - Pre-populate restaurant form (07:51:52)
 - Update my restaurant API (08:13:18)
 - Update my restaurant request (08:22:24)
+- Manage restaurant deploy (08:35:42)
 
-Total Time: 2 hours 3 minutes
+Total Time: 2 hours 31 minutes
 
-Day 5
+Day 4
 ------
 Tasks:
-- Manage restaurant deploy (08:35:42)
 - Search feature overview (08:43:44)
 - Search API (08:46:56)
 - Searchbar component (09:12:40)
 - Search API request (09:34:39)
+- Search page layout (09:44:17)
+- Restaurant Test Data (10:06:38)
+- Search filter (10:11:44)
 
-Total Time: 1 hour 59 minutes
+Total Time: 2 hours 19 minutes
+
+Day 5
+------
+Tasks:
+- Pagination (10:27:58)
+- Cuisines filter (10:42:17)
+- Sort options filter (11:08:21)
+- Search feature deploy (11:21:27)
+- Detail page and menu items (11:26:50)
+- Add to cart (11:53:48)
+- Remove from cart (12:16:06)
+- Checkout button (12:20:12)
+- Confirm delivery details (12:34:58)
+
+Total Time: 2 hours 23 minutes
 
 Day 6
 ------
 Tasks:
-- Search page layout (09:44:17)
-- Restaurant Test Data (10:06:38)
-- Search filter (10:11:44)
-- Pagination (10:27:58)
-- Cuisines filter (10:42:17)
+- Update user profile form (12:46:51)
+- Payments flow overview (12:49:29)
+- Stripe setup (12:54:08)
+- Create session API (12:58:25)
+- Redirect to Stripe (13:26:42)
+- Create order (13:42:35)
+- Stripe CLI setup (13:54:31)
+- Start Stripe CLI with nodemon (14:02:29)
+- Update order in Stripe webhook (14:07:37)
+- Checkout flow deploy (14:20:09)
 
-Total Time: 2 hours 4 minutes
+Total Time: 2 hours 13 minutes
 
 Day 7
 ------
 Tasks:
-- Sort options filter (11:08:21)
-- Search feature deploy (11:21:27)
-- Detail page and menu items (11:26:50)
+- Get customer orders API (14:32:47)
+- Get customer orders request (14:36:56)
+- Order status page (14:43:59)
+- Order status config (14:57:45)
+- Restaurant orders page (15:18:02)
+- Update order API (15:35:07)
+- Order item card update status (15:44:26)
+- Order status polling (15:50:45)
 
-Total Time: 1 hour 36 minutes
+Total Time: 2 hours 22 minutes
 
 Adjustments and Notes:
 1. Flexibility: Allocate extra time each day for unforeseen issues or deeper understanding of complex sections.
