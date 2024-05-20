@@ -42,7 +42,7 @@ const updateCurrentUser = async (req: Request, res: Response) => {
      * once we have the data next step is get the user from the database and update it
      * If no user is found the send error message
      */
-    const user = await User.findById({ userId });
+    const user = await User.findById(userId);
 
     if (!user) {
       return res.status(404).json({ message: "User not found" });
