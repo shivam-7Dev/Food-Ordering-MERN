@@ -35,14 +35,15 @@ app.use(express.json());
 app.use(cors());
 
 /**
- * setting up the test endpoint
+ * setting up the test endpoint to check if server is working or not
  */
 
-app.get("/test", async (req: Request, res: Response) => {
+app.get("/health", async (req: Request, res: Response) => {
   /**
    * sending our first request
+   * this is the convention used in like docker compose and k8s to check if things are working fine
    */
-  res.json({ message: "hello world" });
+  res.json({ message: "hello world! server health OK!" });
 });
 
 app.use("/api/my/user", myUserRoute);
