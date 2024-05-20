@@ -1,0 +1,78 @@
+Daily Schedule for Completing the remaining project Project
+
+Day 1
+------
+Tasks:
+- Toast notifications (04:24:55)
+- Get user API (04:30:32)
+- Pre-populate user profile form (04:43:49)
+- Protect user profile router (04:52:09)
+- First deployment - overview (04:57:15)
+
+Total Time: 1 hour 10 minutes
+
+Day 2
+------
+Tasks:
+- Backend GitHub repo (05:07:51)
+- Backend deploy to Render (05:15:31)
+- Frontend GitHub/deployment (05:24:06)
+
+Total Time: 1 hour 9 minutes
+
+Day 3
+------
+Tasks:
+- Manage restaurant overview (05:33:14)
+- Cloudinary setup (05:35:40)
+- Create restaurant API (05:44:12)
+- Create restaurant form (06:17:01)
+
+Total Time: 2 hours 25 minutes
+
+Day 4
+------
+Tasks:
+- Create restaurant API request (07:22:10)
+- Get my restaurant API (07:47:20)
+- Pre-populate restaurant form (07:51:52)
+- Update my restaurant API (08:13:18)
+- Update my restaurant request (08:22:24)
+
+Total Time: 2 hours 3 minutes
+
+Day 5
+------
+Tasks:
+- Manage restaurant deploy (08:35:42)
+- Search feature overview (08:43:44)
+- Search API (08:46:56)
+- Searchbar component (09:12:40)
+- Search API request (09:34:39)
+
+Total Time: 1 hour 59 minutes
+
+Day 6
+------
+Tasks:
+- Search page layout (09:44:17)
+- Restaurant Test Data (10:06:38)
+- Search filter (10:11:44)
+- Pagination (10:27:58)
+- Cuisines filter (10:42:17)
+
+Total Time: 2 hours 4 minutes
+
+Day 7
+------
+Tasks:
+- Sort options filter (11:08:21)
+- Search feature deploy (11:21:27)
+- Detail page and menu items (11:26:50)
+
+Total Time: 1 hour 36 minutes
+
+Adjustments and Notes:
+1. Flexibility: Allocate extra time each day for unforeseen issues or deeper understanding of complex sections.
+2. Breaks: Make sure to take short breaks to maintain productivity and avoid burnout.
+3. Review: At the end of each day, quickly review the work done to ensure it aligns with the project requirements and note any adjustments needed for the next day.
