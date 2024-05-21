@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import User from "../models/models";
+import User from "../models/user";
 const { auth } = require("express-oauth2-jwt-bearer");
 
 declare global {
