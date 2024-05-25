@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 
 const createMyRestaurant = async (req: Request, res: Response) => {
   try {
+    console.log("-----------");
     /**
      * Check if the user has an existing restaurant in the database
      * If yes then do not create the restaurant
