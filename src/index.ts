@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import myUserRoute from "./routes/myUserRoute";
 import { v2 as cloudinary } from "cloudinary";
 import myRestaurantRoute from "./routes/MyRestaurantRoute";
+import restauant from "./routes/RestaurantRoute";
 
 /**
  * make the connection the the database intially so that if the connection the database fails then our app crashes
@@ -58,7 +59,10 @@ app.get("/api/health", async (req: Request, res: Response) => {
 
 app.use("/api/my/user", myUserRoute);
 app.use("/api/my/restaurant", myRestaurantRoute);
+//this is public route so anyone can use it
+app.use("/api/restaurant", restauant);
 
+const port = process.env.PORT || 4000;
 app.listen(7000, () => {
   console.log("server listning on port 7000");
 });
