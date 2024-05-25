@@ -62,7 +62,7 @@ app.use("/api/my/restaurant", myRestaurantRoute);
 //this is public route so anyone can use it
 app.use("/api/restaurant", restauant);
 
-const port = process.env.Port || 4000;
+const port = process.env.PORT || 4000;
 app.listen(7000, () => {
   console.log("server listning on port 7000");
 });
