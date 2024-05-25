@@ -3,6 +3,8 @@ import cors from "cors";
 import "dotenv/config";
 import mongoose from "mongoose";
 import myUserRoute from "./routes/myUserRoute";
+import { v2 as cloudinary } from "cloudinary";
+import myRestaurantRoute from "./routes/MyRestaurantRoute";
 
 /**
  * make the connection the the database intially so that if the connection the database fails then our app crashes
@@ -16,6 +18,14 @@ mongoose
     console.log("error connecting the database", err);
   });
 
+/**
+ * connecting to cloudinary after connection to the mongodb
+ */
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 /**
  * creating a new express server and assigning it to app variable
  */
@@ -38,7 +48,7 @@ app.use(cors());
  * setting up the test endpoint to check if server is working or not
  */
 
-app.get("/health", async (req: Request, res: Response) => {
+app.get("/api/health", async (req: Request, res: Response) => {
   /**
    * sending our first request
    * this is the convention used in like docker compose and k8s to check if things are working fine
@@ -47,6 +57,7 @@ app.get("/health", async (req: Request, res: Response) => {
 });
 
 app.use("/api/my/user", myUserRoute);
+app.use("/api/my/restaurant", myRestaurantRoute);
 
 app.listen(7000, () => {
   console.log("server listning on port 7000");
